@@ -487,7 +487,11 @@ In this task, you will modify the main template to account for remaining depende
 
 ![M13-Ejer1-T6a](ZZ-lab/M13-Ejer1-T6a.PNG)
 
+
+
 ![M13-Ejer1-T6b](ZZ-lab/M13-Ejer1-T6b.PNG)
+
+
 
 ![M13-Ejer1-T6c](ZZ-lab/M13-Ejer1-T6c.PNG)
 
@@ -533,4 +537,6 @@ In this lab, you learned how to create an Azure Resource manager template, modul
 
 
 # [Volver >>>](https://github.com/liztraining2021/CFTIC-AZ-400-Evidencias-DesigningandImplementingMicrosoftDevOpsSolutions/blob/master/ContenidoEvidenciasAZ-400.md)
+
+
 

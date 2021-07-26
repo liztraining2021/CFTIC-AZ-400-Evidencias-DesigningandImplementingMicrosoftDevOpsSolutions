@@ -307,9 +307,7 @@ In this lab, you integrated a GitHub project with Azure DevOps by using the new 
 
 ![M6b-Ejer1-T6d](ZZ-lab/M6b-Ejer1-T6d.PNG)
 
-
-
-
-
 # [Volver >>>](https://github.com/liztraining2021/CFTIC-AZ-400-Evidencias-DesigningandImplementingMicrosoftDevOpsSolutions/blob/master/ContenidoEvidenciasAZ-400.md)
+
+
 
