@@ -124,7 +124,11 @@ In this task, you will deploy an Azure VM by using Azure CLI and configure it as
 
 ## Evidencias:
 
+![M14a-Ejer1-T1a](ZZ-lab/M14a-Ejer1-T1a.PNG)
 
+![M14a-Ejer1-T1b](ZZ-lab/M14a-Ejer1-T1b.PNG)
+
+![M14a-Ejer1-T1c](ZZ-lab/M14a-Ejer1-T1c.PNG)
 
 #### Task 2: Install and configure Ansible on an Azure VM
 
@@ -172,7 +176,23 @@ In this task, you will install and configure Ansible on the Azure VM you deploye
 
 ## Evidencias:
 
+![M14a-Ejer1-T2a](ZZ-lab/M14a-Ejer1-T2a.PNG)
 
+![M14a-Ejer1-T2b](ZZ-lab/M14a-Ejer1-T2b.PNG)
+
+![M14a-Ejer1-T2c](ZZ-lab/M14a-Ejer1-T2c.PNG)
+
+![M14a-Ejer1-T2d](ZZ-lab/M14a-Ejer1-T2d.PNG)
+
+![M14a-Ejer1-T2e](ZZ-lab/M14a-Ejer1-T2e.PNG)
+
+![M14a-Ejer1-T2f](ZZ-lab/M14a-Ejer1-T2f.PNG)
+
+![M14a-Ejer1-T2g](ZZ-lab/M14a-Ejer1-T2g.PNG)
+
+![M14a-Ejer1-T2h](ZZ-lab/M14a-Ejer1-T2h.PNG)
+
+![M14a-Ejer1-T2i](ZZ-lab/M14a-Ejer1-T2i.PNG)
 
 #### Task 3: Download Ansible configuration and sample playbook files
 
@@ -194,7 +214,7 @@ In this task, you will download from GitHub the Ansible configuration repository
 
 ## Evidencias:
 
-
+![M14a-Ejer1-T3a](ZZ-lab/M14a-Ejer1-T3a.PNG)
 
 #### Task 4: Create and configure Azure Active Directory managed identity
 
@@ -246,7 +266,15 @@ In this task, you will generate an Azure AD managed identity in order to facilit
 
 ## Evidencias:
 
+![M14a-Ejer1-T4a](ZZ-lab/M14a-Ejer1-T4a.PNG)
 
+![M14a-Ejer1-T4b](ZZ-lab/M14a-Ejer1-T4b.PNG)
+
+![M14a-Ejer1-T4c](ZZ-lab/M14a-Ejer1-T4c.PNG)
+
+![M14a-Ejer1-T4d](ZZ-lab/M14a-Ejer1-T4d.PNG)
+
+![M14a-Ejer1-T4e](ZZ-lab/M14a-Ejer1-T4e.PNG)
 
 #### Task 5: Configure SSH for use with Ansible
 
@@ -292,7 +320,11 @@ In this task, you will configure SSH for use with Ansible.
 
 ## Evidencias:
 
+![M14a-Ejer1-T5a](ZZ-lab/M14a-Ejer1-T5a.PNG)
 
+![M14a-Ejer1-T5b](ZZ-lab/M14a-Ejer1-T5b.PNG)
+
+![M14a-Ejer1-T5c](ZZ-lab/M14a-Ejer1-T5c.PNG)
 
 #### Task 6: Create a web server Azure VM by using an Ansible playbook
 
@@ -410,7 +442,17 @@ In this task, you will create an Azure VM hosting a web server by using an Ansib
 
 ## Evidencias:
 
+![M14a-Ejer1-T6a](ZZ-lab/M14a-Ejer1-T6a.PNG)
 
+![M14a-Ejer1-T6b](ZZ-lab/M14a-Ejer1-T6b.PNG)
+
+![M14a-Ejer1-T6c](ZZ-lab/M14a-Ejer1-T6c.PNG)
+
+![M14a-Ejer1-T6d](ZZ-lab/M14a-Ejer1-T6d.PNG)
+
+![M14a-Ejer1-T6e](ZZ-lab/M14a-Ejer1-T6e.PNG)
+
+![M14a-Ejer1-T6f](ZZ-lab/M14a-Ejer1-T6f.PNG)
 
 #### Task 7: Configure an Azure VM by using an Ansible playbook
 
@@ -472,7 +514,11 @@ In this task, you will run another Ansible playbook, this time to configure the 
 
 ## Evidencias:
 
+![M14a-Ejer1-T7a](ZZ-lab/M14a-Ejer1-T7a.PNG)
 
+![M14a-Ejer1-T7b](ZZ-lab/M14a-Ejer1-T7b.PNG)
+
+![M14a-Ejer1-T7c](ZZ-lab/M14a-Ejer1-T7c.PNG)
 
 ### Exercise 2: Remove the Azure lab resources
 
@@ -505,7 +551,7 @@ In this lab, you learned how to deploy, configure, and manage Azure resources by
 
 ## Evidencias:
 
-
+![M14a-Ejer2-T1a](ZZ-lab/M14a-Ejer2-T1a.PNG)
 
 
 

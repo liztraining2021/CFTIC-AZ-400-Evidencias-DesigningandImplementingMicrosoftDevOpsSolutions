@@ -74,7 +74,9 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
 
 ## Evidencias:
 
+![M14b-Ejer0-T1a](ZZ-lab/M14b-Ejer0-T1a.PNG)
 
+![M14b-Ejer0-T1b](ZZ-lab/M14b-Ejer0-T1b.PNG)
 
 ### Exercise 1: Automate infrastructure deployments in the cloud with Terraform and Azure Pipelines
 
@@ -98,7 +100,9 @@ In this task, you will examine the use of Terraform in provisioning Azure Resour
 
 ## Evidencias:
 
+![M14b-Ejer1-T1a](ZZ-lab/M14b-Ejer1-T1a.PNG)
 
+![M14b-Ejer1-T1b](ZZ-lab/M14b-Ejer1-T1b.PNG)
 
 #### Task 2: Build your application using Azure CI Pipeline
 
@@ -117,7 +121,17 @@ In this task, you will build your application and publish the required files as 
 
 ## Evidencias:
 
+![M14b-Ejer1-T2a](ZZ-lab/M14b-Ejer1-T2a.PNG)
 
+![M14b-Ejer1-T2b](ZZ-lab/M14b-Ejer1-T2b.PNG)
+
+![M14b-Ejer1-T2c](ZZ-lab/M14b-Ejer1-T2c.PNG)
+
+![M14b-Ejer1-T2d](ZZ-lab/M14b-Ejer1-T2d.PNG)
+
+![M14b-Ejer1-T2e](ZZ-lab/M14b-Ejer1-T2e.PNG)
+
+![M14b-Ejer1-T2f](ZZ-lab/M14b-Ejer1-T2f.PNG)
 
 #### Task 3: Deploy resources using Terraform (IaC) in Azure CD pipeline
 
@@ -182,7 +196,43 @@ In this task, you will create Azure resources using Terraform as part of your de
 
 ## Evidencias:
 
+![M14b-Ejer1-T3a](ZZ-lab/M14b-Ejer1-T3a.PNG)
 
+![M14b-Ejer1-T3b](ZZ-lab/M14b-Ejer1-T3b.PNG)
+
+![M14b-Ejer1-T3c](ZZ-lab/M14b-Ejer1-T3c.PNG)
+
+![M14b-Ejer1-T3d](ZZ-lab/M14b-Ejer1-T3d.PNG)
+
+![M14b-Ejer1-T3e](ZZ-lab/M14b-Ejer1-T3e.PNG)
+
+![M14b-Ejer1-T3f](ZZ-lab/M14b-Ejer1-T3f.PNG)
+
+![M14b-Ejer1-T3g](ZZ-lab/M14b-Ejer1-T3g.PNG)
+
+![M14b-Ejer1-T3h](ZZ-lab/M14b-Ejer1-T3h.PNG)
+
+![M14b-Ejer1-T3i](ZZ-lab/M14b-Ejer1-T3i.PNG)
+
+![M14b-Ejer1-T3j](ZZ-lab/M14b-Ejer1-T3j.PNG)
+
+![M14b-Ejer1-T3k](ZZ-lab/M14b-Ejer1-T3k.PNG)
+
+![M14b-Ejer1-T3l](ZZ-lab/M14b-Ejer1-T3l.PNG)
+
+![M14b-Ejer1-T3m](ZZ-lab/M14b-Ejer1-T3m.PNG)
+
+![M14b-Ejer1-T3n](ZZ-lab/M14b-Ejer1-T3n.PNG)
+
+![M14b-Ejer1-T3o](ZZ-lab/M14b-Ejer1-T3o.PNG)
+
+![M14b-Ejer1-T3p](ZZ-lab/M14b-Ejer1-T3p.PNG)
+
+![M14b-Ejer1-T3q](ZZ-lab/M14b-Ejer1-T3q.PNG)
+
+![M14b-Ejer1-T3r](ZZ-lab/M14b-Ejer1-T3r.PNG)
+
+![M14b-Ejer1-T3s](ZZ-lab/M14b-Ejer1-T3s.PNG)
 
 ### Exercise 2: Remove the Azure lab resources
 
@@ -216,7 +266,7 @@ In this lab, you learned how to automate repeatable deployments with Terraform o
 
 ## Evidencias:
 
-
+![M14b-Ejer2-T1a](ZZ-lab/M14b-Ejer2-T1a.PNG)
 
 
 

@@ -1,3 +1,7 @@
+## Alumno: Lizbeth Gómes Monserratte
+
+
+
 # Lab: Modernizing your Existing ASP.NET Apps with Azure
 
 # Student lab manual
@@ -64,11 +68,19 @@ In this task, you will create a clone of the Nerd Dinner application and open it
 7. Within the Visual Studio window, in the top menu, click **IIS Express**. This will automatically open a web browser displaying the web application.
 8. Verify that the application runs locally and close the web browser window displaying the running application.
 
+## Evidencias:
+
+
+
 #### Task 2: Configure Docker Desktop
 
 1. From the lab computer, start a web browser, navigate to [the Docker documentation site](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows), download and install Docker Desktop for Windows with the default settings.
 2. On the lab computer, expand the taskbar, right-click the **Docker** icon, and, in the right-click menu, select the **Switch to Windows containers** option.
 3. When prompted for confirmation, click **Switch**.
+
+## Evidencias:
+
+
 
 ### Exercise 1: Modernize the Nerd Dinner application
 
@@ -128,6 +140,10 @@ In this task, you will create an Azure SQL database.
 
     > **Note**: Wait for the deployment to complete. This should take about 5 minutes.
 
+## Evidencias:
+
+
+
 #### Task 2: Migrate the LocalDB to SQL Server in Azure
 
 In this task, you will migrate the application's LocalDB to the Azure SQL database you created in the previous task.
@@ -186,6 +202,10 @@ In this task, you will migrate the application's LocalDB to the Azure SQL databa
 
     > **Note**: Now you have successfully migrated the application's LocalDB to the Azure SQL database and updated the connection string to reflect the change of the database location.
 
+## Evidencias:
+
+
+
 #### Task 3: Add Docker support and debug the application locally within the Docker container by using Visual Studio
 
 In this task, you will add Docker support to Visual Studio and use it to debug the application locally within the Docker container.
@@ -221,6 +241,10 @@ In this task, you will add Docker support to Visual Studio and use it to debug t
    docker images
    ```
 
+## Evidencias:
+
+
+
 #### Task 4: Publish a Docker image to Azure Container Registry
 
 In this task, you will use Visual Studio to publish the Docker image you built in the previous step to Azure Container Registry.
@@ -252,6 +276,10 @@ In this task, you will use Visual Studio to publish the Docker image you built i
    > **Note**: Wait until the publish operation completes. As the result of the publish action, the Docker image will be created and pushed to the Azure Container Registry.
 
 9. Once the publish is successful, switch to the web browser window displaying the Azure portal, in the Azure portal, search for and select the **Container Registries**, and, on the **Azure Container Registry**, click the entry representing the newly created Azure Container registry, on its blade, in the vertical menu on the left hand side, in the **Services** section, click **Repositories**, and verify that it includes the **nerddiner** entry.
+
+## Evidencias:
+
+
 
 #### Task 5: Push the new Docker images from ACR to Azure Container Instances (ACI)
 
@@ -325,6 +353,10 @@ In this task, you will create an Azure Container instance (ACI) and push to it t
 
 9. From the lab computer, open another web browser tab, navigate to the IP address you identified based on the output of the command that provisioned the Azure Container instance and verify that the NerdDinner application is running.
 
+## Evidencias:
+
+
+
 ## Exercise 2: Remove the Azure lab resources
 
 In this exercise, you will remove the Azure resources provisione in this lab to eliminate unexpected charges.
@@ -354,3 +386,12 @@ In this task, you will use Azure Cloud Shell to remove the Azure resources provi
 ## Review
 
 In this lab, you learned how to modernize existing .NET applications with Azure cloud and Windows Containers with minimal code and configuration changes.
+
+## Evidencias:
+
+
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTIC-AZ-400-Evidencias-DesigningandImplementingMicrosoftDevOpsSolutions/blob/master/ContenidoEvidenciasAZ-400.md)
+

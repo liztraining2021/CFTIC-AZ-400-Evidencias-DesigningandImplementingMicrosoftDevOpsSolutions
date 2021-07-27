@@ -1,8 +1,6 @@
----
-lab:
-    title: 'Lab 15: Deploying Docker containers to Azure App Service web apps'
-    module: 'Module 15: Managing Containers using Docker'
----
+## Alumno: Lizbeth Gómes Monserratte
+
+
 
 # Lab 15: Deploying Docker containers to Azure App Service web apps
 # Student lab manual
@@ -37,7 +35,7 @@ Ensure that you're signed in to your Windows 10 virtual machine by using the fol
 #### Review applications required for this lab
 
 Identify the applications that you'll use in this lab:
-  
+
 -   Microsoft Edge
 
 #### Prepare an Azure subscription
@@ -72,6 +70,10 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
     > **Note**: Wait for the process to complete. This should take about 2 minutes. In case the process fails, navigate to your DevOps organization, delete the project, and try again.
 
 1.  On the **Create New Project** page, click **Navigate to project**.
+
+## Evidencias:
+
+
 
 #### Task 2: Create Azure resources
 
@@ -144,6 +146,9 @@ In this task, you will use Azure Cloud Shell to create Azure resources required 
 
     >**Note**: Record the **Registry name**, **Login server**, and **password** entries (the registry names and the admin user name should match). You will need it later in this lab.
 
+## Evidencias:
+
+
 
 ### Exercise 2: Deploy a Docker container to Azure App Service web app by using Azure DevOps
 
@@ -209,6 +214,10 @@ In this task, you will use the Azure DevOps project you generated in the previou
 
 1.  In the upper right corner of the pane, click the **Save** button to save the changes, and, when prompted again, click **Save**.
 
+## Evidencias:
+
+
+
 #### Task 2: Trigger build and release pipelines by using code commit 
 
 In this exercise, you will trigger the build and release pipelines by using code commit.
@@ -243,6 +252,10 @@ In this exercise, you will trigger the build and release pipelines by using code
 
 1.  Verify that the target web app displays the HealthClinic.biz web site, including the change that you applied to trigger the CI/CD pipeline.
 
+## Evidencias:
+
+
+
 ### Exercise 3: Remove the Azure lab resources
 
 In this exercise, you will remove the Azure resources provisioned in this lab to eliminate unexpected charges. 
@@ -271,3 +284,12 @@ In this task, you will use Azure Cloud Shell to remove the Azure resources provi
 ## Review
 
 In this lab, you used an Azure DevOps CI/CD pipeline to build a custom Docker image, pushed it to Azure Container Registry, and deployed it as a container to Azure App Service by using Azure DevOps.
+
+## Evidencias:
+
+
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTIC-AZ-400-Evidencias-DesigningandImplementingMicrosoftDevOpsSolutions/blob/master/ContenidoEvidenciasAZ-400.md)
+
