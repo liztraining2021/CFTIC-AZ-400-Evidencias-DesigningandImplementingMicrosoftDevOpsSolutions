@@ -443,7 +443,7 @@ In this task, you will modify the main template to account for remaining depende
         "enabled": true,
         "storageUri": "[reference('linkedtemplate').outputs.storageUri.value]"
       }
-    ```
+    
 
 1.  Save the updated main deployment template.
 
