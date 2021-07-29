@@ -423,7 +423,7 @@ In this task, you will modify the main template to account for remaining depende
    "dependsOn": [
      "linkedTemplate",
      "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
-   ```
+    ```
 
 1.  In the resources section under the **Microsoft.Compute/virtualMachines** element, reconfigure the **properties/diagnosticsProfile/bootDiagnostics/storageUri** element to reflect the output value you defined in the linked storage template by replacing:
 
@@ -443,7 +443,7 @@ In this task, you will modify the main template to account for remaining depende
         "enabled": true,
         "storageUri": "[reference('linkedtemplate').outputs.storageUri.value]"
       }
-    
+    ```
 
 1.  Save the updated main deployment template.
 
