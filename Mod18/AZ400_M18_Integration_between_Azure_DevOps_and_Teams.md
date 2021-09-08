@@ -1,10 +1,9 @@
----
-lab:
-    title: 'Lab 18: Integration between Azure DevOps and Teams'
-    module: 'Module 18: Implementing System Feedback Mechanisms'
----
+## Alumno: Lizbeth Gómes Monserratte
+
+
 
 # Lab 18: Integration between Azure DevOps and Teams
+
 # Student lab manual
 
 ## Lab overview
@@ -79,6 +78,12 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
 
 1.  On the **Create New Project** page, click **Navigate to project**.
 
+## Evidencias:
+
+![M18-Ejer0-T1a](ZZ-lab/M18-Ejer0-T1a.PNG)
+
+![M18-Ejer0-T1b](ZZ-lab/M18-Ejer0-T1b.PNG)
+
 #### Task 2: Create a team in Microsoft Teams
 
 In this task, you will create a team in Microsoft Teams.
@@ -98,6 +103,12 @@ In this task, you will create a team in Microsoft Teams.
 1.  On the **Some quick details about your private team** panel, replace **Give your team a name** with **Tailwind Traders** and click on **Create**.
 1.  On the **Add members to Tailwind Traders** panel, click **Skip**.
 
+## Evidencias:
+
+![M18-Ejer0-T2a](ZZ-lab/M18-Ejer0-T2a.PNG)
+
+![M18-Ejer0-T2b](ZZ-lab/M18-Ejer0-T2b.PNG)
+
 ### Exercise 1: Integrate Azure Boards with Microsoft Teams
 
 In this exercise, you will implement integration between Azure Boards and Microsoft Teams.
@@ -115,7 +126,7 @@ In this task, you will install and configure Azure Boards app in the newly creat
 1.  Back on the **Azure Boards** panel, click the **set up** link. This will display the **Microsoft Azure DevOps Services - Profile 1** window.
 1.  In the **Microsoft Azure DevOps Services - Profile 1** window, in the **Organization** dropdown list, select your Azure DevOps organization and click **Continue**.
 1.  In the **Microsoft Azure DevOps Services - Profile 1** window, in the **Project** dropdown list, select **Tailwind Traders** and click **Continue**.
- 
+
     >**Note**: This will display the list of existing work items in the **Tailwind Traders** Azure DevOps project.
 
 1.  Scroll through the list of work items, select any of them, and click on the work item name. You will be prompted to select the app to open the corresponding work item. In the list of apps, select Microsoft Edge and click **OK**. This will automatically open a new web browser window and display the work item details in the Azure DevOps portal.
@@ -144,6 +155,24 @@ In this task, you will install and configure Azure Boards app in the newly creat
     feedback - Report a problem or suggest a feature
     ```
 
+## Evidencias:
+
+![M18-Ejer1-T1a](ZZ-lab/M18-Ejer1-T1a.PNG)
+
+![M18-Ejer1-T1b](ZZ-lab/M18-Ejer1-T1b.PNG)
+
+![M18-Ejer1-T1c](ZZ-lab/M18-Ejer1-T1c.PNG)
+
+![M18-Ejer1-T1d](ZZ-lab/M18-Ejer1-T1d.PNG)
+
+![M18-Ejer1-T1e](ZZ-lab/M18-Ejer1-T1e.PNG)
+
+![M18-Ejer1-T1f](ZZ-lab/M18-Ejer1-T1f.PNG)
+
+![M18-Ejer1-T1g](ZZ-lab/M18-Ejer1-T1g.PNG)
+
+![M18-Ejer1-T1h](ZZ-lab/M18-Ejer1-T1h.PNG)
+
 #### Task 2: Add Azure Boards Kanban boards to Microsoft Teams
 
 In this task, you will add Azure Boards Kanban boards to tabs in Microsoft Teams.
@@ -158,6 +187,14 @@ In this task, you will add Azure Boards Kanban boards to tabs in Microsoft Teams
 1.  In the Microsoft Teams window, with the **General** channel of the **Tailwind Traders** team selected, in the list of tabs in the top menu, click the newly added **Tailwind Traders Team boards** tab and ensure that it contains the content matching the **Tailwind Traders Team** board available in the Azure DevOps portal.
 
 > **Note**: All the work can be monitored during the daily standup's and the updates are reflected in real-time, whenever the corresponding work items states change. You also have the option to modify the Kanban board from Microsoft Teams.
+
+## Evidencias:
+
+![M18-Ejer1-T2a](ZZ-lab/M18-Ejer1-T2a.PNG)
+
+![M18-Ejer1-T2b](ZZ-lab/M18-Ejer1-T2b.PNG)
+
+![M18-Ejer1-T2c](ZZ-lab/M18-Ejer1-T2c.PNG)
 
 ### Exercise 2: Integrate Azure Pipelines with Microsoft Teams
 
@@ -189,7 +226,17 @@ In this task, you will install and configure Azure Pipelines app in the designat
     signin - Sign in to your Azure Pipelines account
     signout - Sign out from your Azure Pipelines account
     ```
-   
+
+## Evidencias:
+
+![M18-Ejer2-T1a](ZZ-lab/M18-Ejer2-T1a.PNG)
+
+![M18-Ejer2-T1b](ZZ-lab/M18-Ejer2-T1b.PNG)
+
+![M18-Ejer2-T1c](ZZ-lab/M18-Ejer2-T1c.PNG)
+
+![M18-Ejer2-T1d](ZZ-lab/M18-Ejer2-T1d.PNG)
+
 #### Task 2: Subscribe to the Azure Pipeline notifications in Microsoft Teams
 
 In this task, you will subscribe to the Azure Pipeline notifications in Microsoft Teams
@@ -210,7 +257,7 @@ In this task, you will subscribe to the Azure Pipeline notifications in Microsof
 
 1.  With the **Posts** tab selected, in the **General** channel of the **Tailwind Traders** team, post `@Azure Pipelines subscribe https://dev.azure.com/<organization_name>/Tailwind%20Traders/_build?definitionId=6` to subscribe to the build pipeline (make sure to replace the `<organization_name>` placeholder with the name of your DevOps organization).
 1.  Wait for the confirmation that the subscription has been successfully created.
- 
+
     >**Note**: For Build pipelines, the channel is subscribed to the **Run stage state changed** and **Run stage waiting for approval** notifications.
 
 1.  On your lab computer, switch to the web browser displaying the **Tailwind Traders** project in the Azure DevOps portal, in the vertical menu bar at the far left of the Azure DevOps portal, click **Pipelines**, in the **Pipelines** section, click **Releases**, in the list of releases, click the **Website-CD* entry, and, with the **Website-CD** entry selected, in the web browser window, copy its URL into Clipboard.
@@ -220,7 +267,23 @@ In this task, you will subscribe to the Azure Pipeline notifications in Microsof
 1.  With the **Posts** tab selected, in the **General** channel of the **Tailwind Traders** team, post `@Azure Pipelines subscribe https://dev.azure.com/<organization_name>/Tailwind%20Traders/_release?_a=releases&view=mine&definitionId=2` to subscribe to the release pipeline (make sure to replace the `<organization_name>` placeholder with the name of your DevOps organization).
 
     >**Note**: For Release pipelines, the channel is subscribed to the **Deployment started**, **Deployment completed** and **Deployment approval pending notifications**.
- 
+
+## Evidencias:
+
+![M18-Ejer2-T2a](ZZ-lab/M18-Ejer2-T2a.PNG)
+
+![M18-Ejer2-T2b](ZZ-lab/M18-Ejer2-T2b.PNG)
+
+![M18-Ejer2-T2c](ZZ-lab/M18-Ejer2-T2c.PNG)
+
+![M18-Ejer2-T2d](ZZ-lab/M18-Ejer2-T2d.PNG)
+
+![M18-Ejer2-T2e](ZZ-lab/M18-Ejer2-T2e.PNG)
+
+![M18-Ejer2-T2f](ZZ-lab/M18-Ejer2-T2f.PNG)
+
+![M18-Ejer2-T2g](ZZ-lab/M18-Ejer2-T2g.PNG)
+
 #### Task 3: Using filters to customize subscriptions to Azure Pipelines in Microsoft Teams
 
 In this task, you will use customize subscriptions to Azure Pipelines in Microsoft Teams.
@@ -235,6 +298,20 @@ In this task, you will use customize subscriptions to Azure Pipelines in Microso
 1.  In the **Azure Pipelines** **Add subscription** panel, in the **Build status** dropdown list, ensure that **[Any]** is selected and click **Submit**.
 1.  In the **Azure Pipelines** **Add subscription** panel, click **OK** to acknowledge the confirmation message.
 1.  In the **Azure Pipelines** **View subscriptions** panel, review the list of subscriptions and close the panel.
+
+## Evidencias:
+
+![M18-Ejer2-T3a](ZZ-lab/M18-Ejer2-T3a.PNG)
+
+![M18-Ejer2-T3b](ZZ-lab/M18-Ejer2-T3b.PNG)
+
+![M18-Ejer2-T3c](ZZ-lab/M18-Ejer2-T3c.PNG)
+
+![M18-Ejer2-T3d](ZZ-lab/M18-Ejer2-T3d.PNG)
+
+![M18-Ejer2-T3e](ZZ-lab/M18-Ejer2-T3e.PNG)
+
+![M18-Ejer2-T3f](ZZ-lab/M18-Ejer2-T3f.PNG)
 
 ### Exercise 3: Review Microsoft Teams collaboration features in DevOps scenarios
 
@@ -256,6 +333,12 @@ In this task, you will review some basic Microsoft Teams conversation capabiliti
 1.  If needed, in the **Azure Boards** pop-up window, click the **set up** link, when prompted, in the **Choose the organization you want to link to Azure Boards** pop-up window, in the **Organization** dropdown list, select your Azure DevOps organization and click **Continue**, in the **Project** dropdown list, select **Tailwind Traders** and click **Continue**.
 1.  Back in the post entry, add a reference to a work items into a post.
 
+## Evidencias:
+
+![M18-Ejer3-T1a](ZZ-lab/M18-Ejer3-T1a.PNG)
+
+![M18-Ejer3-T1b](ZZ-lab/M18-Ejer3-T1b.PNG)
+
 #### Task 2: Create channels in Microsoft Teams
 
 In this task, you will step through the process of creating channels in Microsoft Teams
@@ -264,6 +347,12 @@ In this task, you will step through the process of creating channels in Microsof
 
 1.  In the Microsoft Teams window, locate the **Tailwind Traders** team you created earlier in this lab, click the ellipsis symbol on its right side, and, in the dropdown menu, click **Add channel**.
 1.  In the **Create a channel for "Tailwind Traders" team** pop-up window, in the **Channel name** textbox, type **DevOps posts**, leave the **Description (optional)** textbox blank, in the **Privacy** dropdown list, select **Standard - Accessible to everyone on the team** and click **Next**.
+
+## Evidencias:
+
+![M18-Ejer3-T2a](ZZ-lab/M18-Ejer3-T2a.PNG)
+
+![M18-Ejer3-T2b](ZZ-lab/M18-Ejer3-T2b.PNG)
 
 #### Task 3: Share content in Microsoft Teams
 
@@ -293,3 +382,42 @@ In this task, you will step through the process of sharing Azure DevOps wikis in
 ## Review
 
 In this lab, you implemented integration scenarios between Azure DevOps services and Microsoft Teams.
+
+## Evidencias:
+
+![M18-Ejer3-T3a](ZZ-lab/M18-Ejer3-T3a.PNG)
+
+![M18-Ejer3-T3b](ZZ-lab/M18-Ejer3-T3b.PNG)
+
+![M18-Ejer3-T3c](ZZ-lab/M18-Ejer3-T3c.PNG)
+
+![M18-Ejer3-T3d](ZZ-lab/M18-Ejer3-T3d.PNG)
+
+![M18-Ejer3-T3e](ZZ-lab/M18-Ejer3-T3e.PNG)
+
+![M18-Ejer3-T3f](ZZ-lab/M18-Ejer3-T3f.PNG)
+
+![M18-Ejer3-T3g](ZZ-lab/M18-Ejer3-T3g.PNG)
+
+![M18-Ejer3-T3h](ZZ-lab/M18-Ejer3-T3h.PNG)
+
+![M18-Ejer3-T3i](ZZ-lab/M18-Ejer3-T3i.PNG)
+
+![M18-Ejer3-T3i1](ZZ-lab/M18-Ejer3-T3i1.PNG)
+
+![M18-Ejer3-T3j](ZZ-lab/M18-Ejer3-T3j.PNG)
+
+![M18-Ejer3-T3k](ZZ-lab/M18-Ejer3-T3k.PNG)
+
+![M18-Ejer3-T3l](ZZ-lab/M18-Ejer3-T3l.PNG)
+
+![M18-Ejer3-T3m](ZZ-lab/M18-Ejer3-T3m.PNG)
+
+![M18-Ejer3-T3n](ZZ-lab/M18-Ejer3-T3n.PNG)
+
+![M18-Ejer3-T3o](ZZ-lab/M18-Ejer3-T3o.PNG)
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTIC-AZ-400-Evidencias-DesigningandImplementingMicrosoftDevOpsSolutions/blob/master/ContenidoEvidenciasAZ-400.md)
+

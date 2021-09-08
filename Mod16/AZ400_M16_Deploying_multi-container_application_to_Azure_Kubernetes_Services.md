@@ -1,10 +1,7 @@
----
-lab:
-    title: 'Lab 16: Deploying a multi-container application to Azure Kubernetes Services'
-    module: 'Module 16: Create and Manage Kubernetes Service Infrastructure'
----
+## Alumno: Lizbeth Gómes Monserratte
 
 # Lab 16: Deploying a multi-container application to Azure Kubernetes Services
+
 # Student lab manual
 
 ## Lab overview
@@ -73,6 +70,12 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
     > **Note**: Wait for the process to complete. This should take about 2 minutes. In case the process fails, navigate to your DevOps organization, delete the project, and try again.
 
 1.  On the **Create New Project** page, click **Navigate to project**.
+
+## Evidencias:
+
+![M16-Ejer0-T1a](ZZ-lab/M16-Ejer0-T1a.PNG)
+
+![M16-Ejer0-T1b](ZZ-lab/M16-Ejer0-T1b.PNG)
 
 ### Exercise 1: Deploy a containerized ASP.NET Core web application to an AKS cluster by using Azure DevOps
 
@@ -180,6 +183,28 @@ In this task, you will use Azure CLI to perform deployment of the Azure resource
 
 1. Close the Cloud Shell pane.
 
+## Evidencias:
+
+![M16-Ejer1-T1a](ZZ-lab/M16-Ejer1-T1a.PNG)
+
+![M16-Ejer1-T1b](ZZ-lab/M16-Ejer1-T1b.PNG)
+
+![M16-Ejer1-T1c](ZZ-lab/M16-Ejer1-T1c.PNG)
+
+![M16-Ejer1-T1d](ZZ-lab/M16-Ejer1-T1d.PNG)
+
+![M16-Ejer1-T1e](ZZ-lab/M16-Ejer1-T1e.PNG)
+
+![M16-Ejer1-T1f](ZZ-lab/M16-Ejer1-T1f.PNG)
+
+![M16-Ejer1-T1g](ZZ-lab/M16-Ejer1-T1g.PNG)
+
+![M16-Ejer1-T1h](ZZ-lab/M16-Ejer1-T1h.PNG)
+
+![M16-Ejer1-T1i](ZZ-lab/M16-Ejer1-T1i.PNG)
+
+![M16-Ejer1-T1j](ZZ-lab/M16-Ejer1-T1j.PNG)
+
 #### Task 2: Configure the build and release pipelines
 
 In this task, you will configure the build and release pipelines in the Azure DevOps project you generated earlier in this lab, by mapping Azure resources, including the AKS cluster and Azure Container registry to the build and release definitions.
@@ -229,6 +254,26 @@ select the entry representing the Azure subscription you are using in this lab, 
 
     >**Note**: In the list of pipeline variables, **DatabaseName** is set to **mhcdb**, **SQLuser** is set to **sqladmin**, and **SQLpassword** is set to **P2ssw0rd1234**. If you entered different values when creating the Azure SQL database earlier in this lab, update the values of the variables accordingly.
 
+## Evidencias:
+
+![M16-Ejer1-T2a](ZZ-lab/M16-Ejer1-T2a.PNG)
+
+![M16-Ejer1-T2b](ZZ-lab/M16-Ejer1-T2b.PNG)
+
+![M16-Ejer1-T2c](ZZ-lab/M16-Ejer1-T2c.PNG)
+
+![M16-Ejer1-T2d](ZZ-lab/M16-Ejer1-T2d.PNG)
+
+![M16-Ejer1-T2e](ZZ-lab/M16-Ejer1-T2e.PNG)
+
+![M16-Ejer1-T2f](ZZ-lab/M16-Ejer1-T2f.PNG)
+
+![M16-Ejer1-T2g](ZZ-lab/M16-Ejer1-T2g.PNG)
+
+![M16-Ejer1-T2h](ZZ-lab/M16-Ejer1-T2h.PNG)
+
+
+
 #### Task 3: Trigger the build and release pipelines
 
 In this task, you will trigger the build and release pipelines and validate their completion.
@@ -272,6 +317,20 @@ In this task, you will trigger the build and release pipelines and validate thei
 
     >**Note**: Kubernetes includes a web dashboard that can be used for basic management operations. This dashboard lets you view basic health status and metrics for your applications, create and deploy services, and edit existing applications. Follow [Microsoft Docs](https://docs.microsoft.com/en-us/azure/aks/kubernetes-dashboard) to access the Kubernetes web dashboard in Azure Kubernetes Service (AKS).
 
+## Evidencias:
+
+![M16-Ejer1-T3a](ZZ-lab/M16-Ejer1-T3a.PNG)
+
+![M16-Ejer1-T3b](ZZ-lab/M16-Ejer1-T3b.PNG)
+
+![M16-Ejer1-T3c](ZZ-lab/M16-Ejer1-T3c.PNG)
+
+![M16-Ejer1-T3d](ZZ-lab/M16-Ejer1-T3d.PNG)
+
+![M16-Ejer1-T3e](ZZ-lab/M16-Ejer1-T3e.PNG)
+
+![M16-Ejer1-T3f](ZZ-lab/M16-Ejer1-T3f.PNG)
+
 ### Exercise 2: Remove the Azure lab resources
 
 In this exercise, you will remove the Azure resources provisioned in this lab to eliminate unexpected charges. 
@@ -300,3 +359,8 @@ In this task, you will use Azure Cloud Shell to remove the Azure resources provi
 ## Review
 
 In this lab, you learned how to use Azure DevOps to deploy a containerized ASP.NET Core web application **MyHealthClinic** (MHC) to an AKS cluster. 
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTIC-AZ-400-Evidencias-DesigningandImplementingMicrosoftDevOpsSolutions/blob/master/ContenidoEvidenciasAZ-400.md)
+

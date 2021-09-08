@@ -1,10 +1,9 @@
----
-lab:
-    title: 'Lab 19: Implement Security and Compliance in an Azure DevOps pipeline'
-    module: 'Module 19: Implementing Security in DevOps Projects'
----
+## Alumno: Lizbeth Gómes Monserratte
+
+
 
 # Lab 19: Implement Security and Compliance in an Azure DevOps pipeline
+
 # Student lab manual
 
 ## Lab overview
@@ -76,6 +75,12 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
 
 1.  On the **Create New Project** page, click **Navigate to project**.
 
+## Evidencias:
+
+![M19-Ejer0-T1a](ZZ-lab/M19-Ejer0-T1a.PNG)
+
+![M19-Ejer0-T1b](ZZ-lab/M19-Ejer0-T1b.PNG)
+
 ### Exercise 1: Implement Security and Compliance in an Azure DevOps pipeline by using WhiteSource Bolt
 
 In this exercise, leverage WhiteSource Bolt to scan the project code for security vulnerabilities and licensing compliance issues, and view the resulting report.
@@ -87,6 +92,14 @@ In this task, you will activate WhiteSource Bolt in the newly generated Azure De
 1.  On your lab computer, in the web browser window displaying the Azure DevOps portal with the **WhiteSource Bolt** project open, **in the vertical menu bar** at the far left of the Azure DevOps portal, click **Pipelines**  section and  **WhiteSource Bolt** option (in the vertical menu bar under "Deployment Groups" option).
 1.  On the **You're almost there** pane, provide your **Work Email** and **Company Name**, in the **Country** dropdown list, select the entry representing your country, and click *Get Started* button to start using the *Free* version of WhiteSource Bolt. This will automatically open a new browser tab displaying the **Get Started With Bolt** page. 
 1.  Switch back to the web browser tab displaying the Azure DevOps portal and verify that the **You are using a FREE version of WhiteSource Bolt** is displayed.
+
+## Evidencias:
+
+![M19-Ejer1-T1a](ZZ-lab/M19-Ejer1-T1a.PNG)
+
+![M19-Ejer1-T1b](ZZ-lab/M19-Ejer1-T1b.PNG)
+
+
 
 #### Task 2: Trigger a build
 
@@ -116,6 +129,22 @@ In this task, you will trigger a build within your Java code-based Azure DevOps 
     
 1.  Once the build completes, navigate back to the **Summary** tab and review **Tests and coverage** section. 
 
+## Evidencias:
+
+![M19-Ejer1-T2a](ZZ-lab/M19-Ejer1-T2a.PNG)
+
+![M19-Ejer1-T2b](ZZ-lab/M19-Ejer1-T2b.PNG)
+
+![M19-Ejer1-T2c](ZZ-lab/M19-Ejer1-T2c.PNG)
+
+![M19-Ejer1-T2d](ZZ-lab/M19-Ejer1-T2d.PNG)
+
+![M19-Ejer1-T2e](ZZ-lab/M19-Ejer1-T2e.PNG)
+
+![M19-Ejer1-T2f](ZZ-lab/M19-Ejer1-T2f.PNG)
+
+![M19-Ejer1-T2g](ZZ-lab/M19-Ejer1-T2g.PNG)
+
 #### Task 3: Analyze Reports
 
 In this task, you will review the WhiteSource Bolt build report. 
@@ -133,3 +162,14 @@ In this task, you will review the WhiteSource Bolt build report.
 ## Review
 
 In this lab, you will use **WhiteSource Bolt with Azure DevOps** to automatically detect vulnerable open source components, outdated libraries, and license compliance issues in your code.
+
+## Evidencias:
+
+![M19-Ejer1-T3a](ZZ-lab/M19-Ejer1-T3a.PNG)
+
+![M19-Ejer1-T3b](ZZ-lab/M19-Ejer1-T3b.PNG)
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTIC-AZ-400-Evidencias-DesigningandImplementingMicrosoftDevOpsSolutions/blob/master/ContenidoEvidenciasAZ-400.md)
+

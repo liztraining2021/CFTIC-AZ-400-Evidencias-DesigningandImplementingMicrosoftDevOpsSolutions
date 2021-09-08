@@ -1,8 +1,6 @@
----
-lab:
-    title: 'Lab 17: Monitoring Application Performance with Application Insights'
-    module: 'Module 17: Implementing Feedback for Development Teams'
----
+## Alumno: Lizbeth Gómes Monserratte
+
+
 
 # Lab 17: Monitoring Application Performance with Application Insights
 # Student lab manual
@@ -75,6 +73,12 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
 
 1.  On the **Create New Project** page, click **Navigate to project**.
 
+## Evidencias:
+
+![M17-Ejer0-T1a](ZZ-lab/M17-Ejer0-T1a.PNG)
+
+![M17-Ejer0-T1b](ZZ-lab/M17-Ejer0-T1b.PNG)
+
 #### Task 2: Create Azure resources
 
 In this task, you will create an Azure web app and an Azure SQL database by using the Azure portal.
@@ -126,6 +130,12 @@ In this task, you will create an Azure web app and an Azure SQL database by usin
 1.  Back on the **Web App + SQL** blade, click **Create**. 
 
     > **Note**: Wait for the process to complete. This should take about 2 minutes. 
+
+## Evidencias:
+
+![M17-Ejer0-T2a](ZZ-lab/M17-Ejer0-T2a.PNG)
+
+![M17-Ejer0-T2b](ZZ-lab/M17-Ejer0-T2b.PNG)
 
 ### Exercise 1: Monitor an Azure App Service web app by using Azure Application Insights
 
@@ -205,6 +215,22 @@ In this task, you will deploying a web app to Azure by using Azure DevOps pipeli
 web site.
 1.  Verify that the **Parts Unlimited** web site loads as expected. 
 
+## Evidencias:
+
+![M17-Ejer1-T1a](ZZ-lab/M17-Ejer1-T1a.PNG)
+
+![M17-Ejer1-T1b](ZZ-lab/M17-Ejer1-T1b.PNG)
+
+![M17-Ejer1-T1c](ZZ-lab/M17-Ejer1-T1c.PNG)
+
+![M17-Ejer1-T1d](ZZ-lab/M17-Ejer1-T1d.PNG)
+
+![M17-Ejer1-T1e](ZZ-lab/M17-Ejer1-T1e.PNG)
+
+![M17-Ejer1-T1f](ZZ-lab/M17-Ejer1-T1f.PNG)
+
+![M17-Ejer1-T1g](ZZ-lab/M17-Ejer1-T1g.PNG)
+
 #### Task 2: Generate and review application traffic
 
 In this task, you will generate traffic targeting the App Service web app you deployed in the previous task and review the data collected by Application Insights resource associated with the web app.
@@ -222,6 +248,12 @@ In this task, you will generate traffic targeting the App Service web app you de
 
 1.  On the **Application Insights** configuration blade, click the **View Application Insights data** link.
 1.  Review the resulting **Application Insights** blade displaying charts presenting different characteristics of the collected data, including the traffic you generated and failed requests you triggered earlier in this task.
+
+## Evidencias:
+
+![M17-Ejer1-T2a](ZZ-lab/M17-Ejer1-T2a.PNG)
+
+![M17-Ejer1-T2b](ZZ-lab/M17-Ejer1-T2b.PNG)
 
 #### Task 3: Investigate application performance
 
@@ -296,6 +328,30 @@ In this task, you will use Application Insights to investigate performance of th
 
     > **Note**: This will split the server requests based on pages they reference, represented by different colors in the chart.
 
+## Evidencias:
+
+![M17-Ejer1-T3a](ZZ-lab/M17-Ejer1-T3a.PNG)
+
+![M17-Ejer1-T3b](ZZ-lab/M17-Ejer1-T3b.PNG)
+
+![M17-Ejer1-T3c](ZZ-lab/M17-Ejer1-T3c.PNG)
+
+![M17-Ejer1-T3d](ZZ-lab/M17-Ejer1-T3d.PNG)
+
+![M17-Ejer1-T3e](ZZ-lab/M17-Ejer1-T3e.PNG)
+
+![M17-Ejer1-T3f](ZZ-lab/M17-Ejer1-T3f.PNG)
+
+![M17-Ejer1-T3g](ZZ-lab/M17-Ejer1-T3g.PNG)
+
+![M17-Ejer1-T3h](ZZ-lab/M17-Ejer1-T3h.PNG)
+
+![M17-Ejer1-T3i](ZZ-lab/M17-Ejer1-T3i.PNG)
+
+![M17-Ejer1-T3j](ZZ-lab/M17-Ejer1-T3j.PNG)
+
+![M17-Ejer1-T3k](ZZ-lab/M17-Ejer1-T3k.PNG)
+
 #### Task 4: Track application usage
 
 > **Note**: Application Insights provides a broad set of features to track application usage. 
@@ -350,6 +406,28 @@ In this task, you will use Application Insights to investigate performance of th
 
     > **Note**: This particular report offers insight regarding the page views. There are many other reports available by default, and you can customize and save new ones.
 
+## Evidencias:
+
+![M17-Ejer1-T4a](ZZ-lab/M17-Ejer1-T4a.PNG)
+
+![M17-Ejer1-T4b](ZZ-lab/M17-Ejer1-T4b.PNG)
+
+![M17-Ejer1-T4c](ZZ-lab/M17-Ejer1-T4c.PNG)
+
+![M17-Ejer1-T4d](ZZ-lab/M17-Ejer1-T4d.PNG)
+
+![M17-Ejer1-T4e](ZZ-lab/M17-Ejer1-T4e.PNG)
+
+![M17-Ejer1-T4f](ZZ-lab/M17-Ejer1-T4f.PNG)
+
+![M17-Ejer1-T4g](ZZ-lab/M17-Ejer1-T4g.PNG)
+
+![M17-Ejer1-T4h](ZZ-lab/M17-Ejer1-T4h.PNG)
+
+![M17-Ejer1-T4i](ZZ-lab/M17-Ejer1-T4i.PNG)
+
+![M17-Ejer1-T4j](ZZ-lab/M17-Ejer1-T4j.PNG)
+
 #### Task 5: Configure web app alerts
 
 1.  While on the **More \| Gallery** blade, in the vertical menu on the left side, in the **Monitoring** section, click **Alerts**. 
@@ -391,6 +469,24 @@ In this task, you will use Application Insights to investigate performance of th
 
 1.  After about five minutes, check your email account to verify that you have received an email indicating that the alert you defined was triggered.
 
+## Evidencias:
+
+![M17-Ejer1-T5a](ZZ-lab/M17-Ejer1-T5a.PNG)
+
+![M17-Ejer1-T5b](ZZ-lab/M17-Ejer1-T5b.PNG)
+
+![M17-Ejer1-T5c](ZZ-lab/M17-Ejer1-T5c.PNG)
+
+![M17-Ejer1-T5d](ZZ-lab/M17-Ejer1-T5d.PNG)
+
+![M17-Ejer1-T5e](ZZ-lab/M17-Ejer1-T5e.PNG)
+
+![M17-Ejer1-T5f](ZZ-lab/M17-Ejer1-T5f.PNG)
+
+![M17-Ejer1-T5g](ZZ-lab/M17-Ejer1-T5g.PNG)
+
+![M17-Ejer1-T5h](ZZ-lab/M17-Ejer1-T5h.PNG)
+
 ### Exercise 2: Remove the Azure lab resources
 
 In this exercise, you will remove the Azure resources provisione in this lab to eliminate unexpected charges. 
@@ -419,3 +515,12 @@ In this task, you will use Azure Cloud Shell to remove the Azure resources provi
 ## Review
 
 In this exercise, you deployed a web app to Azure App Service by using Azure DevOps pipelines, generated traffic targeting the web app, and used Application Insights to review the web traffic, investigate application performance, track application usage, and configure alerting.
+
+## Evidencias:
+
+![M17-Ejer2-T1a](ZZ-lab/M17-Ejer2-T1a.PNG)
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTIC-AZ-400-Evidencias-DesigningandImplementingMicrosoftDevOpsSolutions/blob/master/ContenidoEvidenciasAZ-400.md)
+

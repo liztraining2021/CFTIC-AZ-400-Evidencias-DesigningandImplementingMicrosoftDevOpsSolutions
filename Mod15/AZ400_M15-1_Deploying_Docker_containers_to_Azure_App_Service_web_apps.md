@@ -73,7 +73,9 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
 
 ## Evidencias:
 
+![M15-Ejer1-T1a](ZZ-lab/M15-Ejer1-T1a.PNG)
 
+![M15-Ejer1-T1b](ZZ-lab/M15-Ejer1-T1b.PNG)
 
 #### Task 2: Create Azure resources
 
@@ -148,7 +150,21 @@ In this task, you will use Azure Cloud Shell to create Azure resources required 
 
 ## Evidencias:
 
+![M15-Ejer1-T2a](ZZ-lab/M15-Ejer1-T2a.PNG)
 
+![M15-Ejer1-T2b](ZZ-lab/M15-Ejer1-T2b.PNG)
+
+![M15-Ejer1-T2c](ZZ-lab/M15-Ejer1-T2c.PNG)
+
+![M15-Ejer1-T2d](ZZ-lab/M15-Ejer1-T2d.PNG)
+
+![M15-Ejer1-T2e](ZZ-lab/M15-Ejer1-T2e.PNG)
+
+![M15-Ejer1-T2f](ZZ-lab/M15-Ejer1-T2f.PNG)
+
+![M15-Ejer1-T2g](ZZ-lab/M15-Ejer1-T2g.PNG)
+
+![M15-Ejer1-T2h](ZZ-lab/M15-Ejer1-T2h.PNG)
 
 ### Exercise 2: Deploy a Docker container to Azure App Service web app by using Azure DevOps
 
@@ -216,7 +232,27 @@ In this task, you will use the Azure DevOps project you generated in the previou
 
 ## Evidencias:
 
+![M15-Ejer2-T1a](ZZ-lab/M15-Ejer2-T1a.PNG)
 
+![M15-Ejer2-T1b](ZZ-lab/M15-Ejer2-T1b.PNG)
+
+![M15-Ejer2-T1c](ZZ-lab/M15-Ejer2-T1c.PNG)
+
+![M15-Ejer2-T1d](ZZ-lab/M15-Ejer2-T1d.PNG)
+
+![M15-Ejer2-T1e](ZZ-lab/M15-Ejer2-T1e.PNG)
+
+![M15-Ejer2-T1f](ZZ-lab/M15-Ejer2-T1f.PNG)
+
+![M15-Ejer2-T1g](ZZ-lab/M15-Ejer2-T1g.PNG)
+
+![M15-Ejer2-T1h](ZZ-lab/M15-Ejer2-T1h.PNG)
+
+![M15-Ejer2-T1i](ZZ-lab/M15-Ejer2-T1i.PNG)
+
+![M15-Ejer2-T1j](ZZ-lab/M15-Ejer2-T1j.PNG)
+
+![M15-Ejer2-T1k](ZZ-lab/M15-Ejer2-T1k.PNG)
 
 #### Task 2: Trigger build and release pipelines by using code commit 
 
@@ -254,7 +290,25 @@ In this exercise, you will trigger the build and release pipelines by using code
 
 ## Evidencias:
 
+![M15-Ejer2-T2a](ZZ-lab/M15-Ejer2-T2a.PNG)
 
+![M15-Ejer2-T2b](ZZ-lab/M15-Ejer2-T2b.PNG)
+
+![M15-Ejer2-T2c](ZZ-lab/M15-Ejer2-T2c.PNG)
+
+![M15-Ejer2-T2d](ZZ-lab/M15-Ejer2-T2d.PNG)
+
+![M15-Ejer2-T2e](ZZ-lab/M15-Ejer2-T2e.PNG)
+
+![M15-Ejer2-T2f](ZZ-lab/M15-Ejer2-T2f.PNG)
+
+![M15-Ejer2-T2g](ZZ-lab/M15-Ejer2-T2g.PNG)
+
+![M15-Ejer2-T2h](ZZ-lab/M15-Ejer2-T2h.PNG)
+
+![M15-Ejer2-T2i](ZZ-lab/M15-Ejer2-T2i.PNG)
+
+![M15-Ejer2-T2j](ZZ-lab/M15-Ejer2-T2j.PNG)
 
 ### Exercise 3: Remove the Azure lab resources
 
@@ -284,8 +338,6 @@ In this task, you will use Azure Cloud Shell to remove the Azure resources provi
 ## Review
 
 In this lab, you used an Azure DevOps CI/CD pipeline to build a custom Docker image, pushed it to Azure Container Registry, and deployed it as a container to Azure App Service by using Azure DevOps.
-
-## Evidencias:
 
 
 

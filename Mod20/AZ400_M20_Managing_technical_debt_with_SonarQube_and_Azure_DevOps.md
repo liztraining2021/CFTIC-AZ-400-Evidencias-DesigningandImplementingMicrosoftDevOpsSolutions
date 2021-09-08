@@ -1,10 +1,9 @@
----
-lab:
-    title: 'Lab 20: Managing technical debt with SonarCloud and Azure DevOps'
-    module: 'Module 20: Validating Code Bases for Compliance'
----
+## Alumno: Lizbeth Gómes Monserratte
+
+
 
 # Lab 20: Managing technical debt with SonarCloud and Azure DevOps
+
 # Student lab manual
 
 ## Lab overview
@@ -73,6 +72,18 @@ In this task, you will create a new Azure DevOps project based on the [Sonar Sca
 
     > **Note**: The scanning examples repository contains sample projects for a number of build systems and languages including C# with MSBuild, and Maven and Gradle with Java.
 
+## Evidencias:
+
+![M20-Ejer0-T1a](ZZ-lab/M20-Ejer0-T1a.PNG)
+
+![M20-Ejer0-T1b](ZZ-lab/M20-Ejer0-T1b.PNG)
+
+![M20-Ejer0-T1c](ZZ-lab/M20-Ejer0-T1c.PNG)
+
+![M20-Ejer0-T1d](ZZ-lab/M20-Ejer0-T1d.PNG)
+
+![M20-Ejer0-T1e](ZZ-lab/M20-Ejer0-T1e.PNG)
+
 #### Task 2: Generate an Azure DevOps personal access token
 
 In this task, you will generate an Azure DevOps personal access token that will be used to authenticate from the Postman app you will install in the next task of this exercise.
@@ -92,6 +103,12 @@ In this task, you will generate an Azure DevOps personal access token that will 
      > **Note**: Make sure you record the value of the token. You will not be able to retrieve it once you close this pane. 
 
 1.   On the **Success** pane, click **Close**.
+
+## Evidencias:
+
+![M20-Ejer0-T2a](ZZ-lab/M20-Ejer0-T2a.PNG)
+
+![M20-Ejer0-T2b](ZZ-lab/M20-Ejer0-T2b.PNG)
 
 #### Task 3: Install and configure the SonarCloud Azure DevOps extension
 
@@ -136,6 +153,38 @@ In this task, you will install and configure the SonarCloud Azure DevOps extensi
 
     > **Note**: Record the value of the token necessary to set up the SonarCloud Service Endpoint and the value of the **Project Key** and **Project Name**.
 
+## Evidencias:
+
+![M20-Ejer0-T3a](ZZ-lab/M20-Ejer0-T3a.PNG)
+
+![M20-Ejer0-T3b](ZZ-lab/M20-Ejer0-T3b.PNG)
+
+![M20-Ejer0-T3c](ZZ-lab/M20-Ejer0-T3c.PNG)
+
+![M20-Ejer0-T3d](ZZ-lab/M20-Ejer0-T3d.PNG)
+
+![M20-Ejer0-T3e](ZZ-lab/M20-Ejer0-T3e.PNG)
+
+![M20-Ejer0-T3f](ZZ-lab/M20-Ejer0-T3f.PNG)
+
+![M20-Ejer0-T3g](ZZ-lab/M20-Ejer0-T3g.PNG)
+
+![M20-Ejer0-T3h](ZZ-lab/M20-Ejer0-T3h.PNG)
+
+![M20-Ejer0-T3i](ZZ-lab/M20-Ejer0-T3i.PNG)
+
+![M20-Ejer0-T3j](ZZ-lab/M20-Ejer0-T3j.PNG)
+
+![M20-Ejer0-T3k](ZZ-lab/M20-Ejer0-T3k.PNG)
+
+![M20-Ejer0-T3l](ZZ-lab/M20-Ejer0-T3l.PNG)
+
+![M20-Ejer0-T3m](ZZ-lab/M20-Ejer0-T3m.PNG)
+
+![M20-Ejer0-T3n](ZZ-lab/M20-Ejer0-T3n.PNG)
+
+![M20-Ejer0-T3o](ZZ-lab/M20-Ejer0-T3o.PNG)
+
 ### Exercise 1: Set up an Azure DevOps pipeline that integrates with SonarCloud
 
 In this exercise, you will set up an Azure DevOps pipeline that integrates with SonarCloud.
@@ -152,6 +201,10 @@ In this task, you will begin creating the build pipeline for our project.
     > **Note**: You have two options. You can configure the pipeline with either the **YAML editor** or with the **classic editor**. With the classic editor, you can take advantage of the pre-defined templates that were installed as part of the SonarCloud Extension, above. With the YAML editor you need to use a separately provided YAML file. We will step through each of these two options. 
 
     > **Note**: Skip the next task if you intend to use the classic editor.
+
+## Evidencias:
+
+![M20-Ejer1-T1a](ZZ-lab/M20-Ejer1-T1a.PNG)
 
 #### Task 2: Create a pipeline by using the YAML editor
 
@@ -174,25 +227,25 @@ In this task, you will create a pipeline by using the YAML editor.
     ```yaml
     trigger:
     - master
-
+    
     pool:
       vmImage: 'windows-latest'
-
+    
     variables:
       buildConfiguration: 'Release'
       buildPlatform: 'any cpu'
-
+    
     steps:
     - task: NuGetToolInstaller@0
       displayName: 'Use NuGet 4.4.1'
       inputs:
         versionSpec: 4.4.1
-
+    
     - task: NuGetCommand@2
       displayName: 'NuGet restore'
       inputs:
         restoreSolution: 'SomeConsoleApplication.sln'
-
+    
     - task: SonarCloudPrepare@1
       displayName: 'Prepare analysis configuration'
       inputs:
@@ -209,7 +262,7 @@ In this task, you will create a pipeline by using the YAML editor.
         solution: 'SomeConsoleApplication.sln'
         platform: '$(BuildPlatform)'
         configuration: '$(BuildConfiguration)'
-
+    
     - task: VSTest@2
       displayName: 'VsTest - testAssemblies'
       inputs:
@@ -219,16 +272,16 @@ In this task, you will create a pipeline by using the YAML editor.
         codeCoverageEnabled: true
         platform: '$(BuildPlatform)'
         configuration: '$(BuildConfiguration)'
-
+    
     - task: SonarCloudAnalyze@1
       displayName: 'Run SonarCloud analysis'
-
+    
     - task: SonarCloudPublish@1
       displayName: 'Publish results on build summary'
     ```
-
+    
     > **Note**: You can download the file **net-desktop-sonarcloud.yml** from the [SonarSource GitHub repository](https://github.com/SonarSource/sonar-scanner-vsts/blob/master/yaml-pipeline-templates/net-desktop-sonarcloud.yml).
-
+    
     > **Note**: The YAML pipeline needs to be modified by following the remaining steps in this task. 
 
 1.  In the **NuggetCommand@2** task, replace `restoreSolution: 'SomeConsoleApplication.sln'` with `restoreSolution: '**\SomeConsoleApplication.sln'` to account for the fact that our solution is not located in the root of the repo.
@@ -240,10 +293,39 @@ In this task, you will create a pipeline by using the YAML editor.
 
     > **Note**: Skip the next task if you used the YAML editor in the previous task.
 1. Go to Project Settings > Overview, in visibility field change it to **Private**.
+   
     > **Note**: This last step is needed because of a change happening to public projects in February 2021, access to pipelines will need to be requested: https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/
 1. Go to Azure Pipelines > Pipelines and click in **Sonarexample** pipeline, open latest run. You will see it queued, **Cancel** the pending one, click **Yes**. Now click on **Run new** > **Run** to trigger a new run (this time pipeline will have the proper agents assigned for private projects).
 
+## Evidencias:
 
+![M20-Ejer1-T2a](ZZ-lab/M20-Ejer1-T2a.PNG)
+
+![M20-Ejer1-T2b](ZZ-lab/M20-Ejer1-T2b.PNG)
+
+![M20-Ejer1-T2c](ZZ-lab/M20-Ejer1-T2c.PNG)
+
+![M20-Ejer1-T2d](ZZ-lab/M20-Ejer1-T2d.PNG)
+
+![M20-Ejer1-T2e](ZZ-lab/M20-Ejer1-T2e.PNG)
+
+![M20-Ejer1-T2f](ZZ-lab/M20-Ejer1-T2f.PNG)
+
+![M20-Ejer1-T2g](ZZ-lab/M20-Ejer1-T2g.PNG)
+
+![M20-Ejer1-T2h](ZZ-lab/M20-Ejer1-T2h.PNG)
+
+![M20-Ejer1-T2i](ZZ-lab/M20-Ejer1-T2i.PNG)
+
+![M20-Ejer1-T2j](ZZ-lab/M20-Ejer1-T2j.PNG)
+
+![M20-Ejer1-T2k](ZZ-lab/M20-Ejer1-T2k.PNG)
+
+![M20-Ejer1-T2l](ZZ-lab/M20-Ejer1-T2l.PNG)
+
+![M20-Ejer1-T2m](ZZ-lab/M20-Ejer1-T2m.PNG)
+
+![M20-Ejer1-T2o](ZZ-lab/M20-Ejer1-T2o.PNG)
 
 #### Task 3: Create a pipeline by using the classic editor
 
@@ -272,7 +354,12 @@ In this task, you will create a pipeline by using the classic editor.
 
 1.  On the build pipeline editor pane, click **Save & queue**, in the dropdown menu, click **Save & queue**, and, on the **Run pipeline** pane, click **Save and run**, and wait for the build to complete.
 
+## Evidencias:
+
+
+
 #### Task 4: Check pipeline results
+
 1.  On the build run pane (either YAML or Classic one created before) , review the content of the **Summary** tab and then click the **Extensions** tab header.
 
     > **Note**: If you left the **Publish Quality Gate Result** task enabled, the **Extension** tab includes the summary of the SonarCloud analysis report.
@@ -293,6 +380,28 @@ In this task, you will create a pipeline by using the classic editor.
 1.  Verify that the report now includes the Quality Gate result.
 
     > **Note**: We have now created a new organization on SonarCloud and configured an Azure DevOps build to perform analysis and push the results of the build to SonarCloud.
+
+## Evidencias:
+
+![M20-Ejer1-T4a](ZZ-lab/M20-Ejer1-T4a.PNG)
+
+![M20-Ejer1-T4b](ZZ-lab/M20-Ejer1-T4b.PNG)
+
+![M20-Ejer1-T4c](ZZ-lab/M20-Ejer1-T4c.PNG)
+
+![M20-Ejer1-T4d](ZZ-lab/M20-Ejer1-T4d.PNG)
+
+![M20-Ejer1-T4e](ZZ-lab/M20-Ejer1-T4e.PNG)
+
+![M20-Ejer1-T4f](ZZ-lab/M20-Ejer1-T4f.PNG)
+
+![M20-Ejer1-T4g](ZZ-lab/M20-Ejer1-T4g.PNG)
+
+![M20-Ejer1-T4h](ZZ-lab/M20-Ejer1-T4h.PNG)
+
+![M20-Ejer1-T4i](ZZ-lab/M20-Ejer1-T4i.PNG)
+
+![M20-Ejer1-T4j](ZZ-lab/M20-Ejer1-T4j.PNG)
 
 ### Exercise 2: Analyze SonarCloud reports
 
@@ -324,6 +433,12 @@ In this exercise, you will analyze SonarCloud reports.
 
     > **Note**: Our sample project is very small and has no historical data. However, there are thousands of [public projects on SonarCloud](https://sonarcloud.io/explore/projects) that have more interesting and realistic results.
 
+## Evidencias:
+
+![M20-Ejer2-T1a](ZZ-lab/M20-Ejer2-T1a.PNG)
+
+![M20-Ejer2-T1b](ZZ-lab/M20-Ejer2-T1b.PNG)
+
 ### Exercise 3: Implement Azure DevOps pull request integration with SonarCloud
 
 In this exercise, you will set up pull request integration between Azure DevOps and SonarCloud.
@@ -344,6 +459,10 @@ In this task, you will review the personal access token requirements for impleme
 
     > **Note**: SonarCloud comments to pull requests will be added in the security context of the user who created the personal access token. The recommended practice is to create a separate "bot" Azure DevOps user for this purpose, to clearly identify comments originating from SonarCloud.
 
+## Evidencias:
+
+![M20-Ejer3-T1a](ZZ-lab/M20-Ejer3-T1a.PNG)
+
 #### Task 2: Configure pull request integration in SonarCloud
 
 In this task, you will configure pull request integration in SonarCloud by assigning an Azure DevOps personal access token to your SonarCloud project.
@@ -353,6 +472,14 @@ In this task, you will configure pull request integration in SonarCloud by assig
 1.  On the **General Settings** page, click **Pull Requests**.
 1.  In the **General** section of the **Pull Requests** settings, in the **Provider** dropdown list, select **Azure DevOps Services** and click **Save**.
 1.  In the **Integration with Azure DevOps Services** section of the **Pull Requests** settings, in the **Personal access token** textbox, paste the previously generated Azure DevOps personal access token and click **Save**
+
+## Evidencias:
+
+![M20-Ejer3-T2a](ZZ-lab/M20-Ejer3-T2a.PNG)
+
+![M20-Ejer3-T2b](ZZ-lab/M20-Ejer3-T2b.PNG)
+
+![M20-Ejer3-T2c](ZZ-lab/M20-Ejer3-T2c.PNG)
 
 #### Task 3: Configure a branch policy for integration with SonarCloud
 
@@ -365,6 +492,16 @@ In this task, you will configure an Azure DevOps branch policy for integration w
 1.  On the **Add build policy** pane, in the **Build pipeline** dropdown list, select the pipeline you created earlier in this task, in the **Display name** textbox, type **SonarCloud analysis** and click **Save**.
 
     > **Note**: Azure DevOps is now configured to trigger a SonarCloud analysis when any pull request targeting the **master** branch is created.
+
+## Evidencias:
+
+![M20-Ejer3-T3a](ZZ-lab/M20-Ejer3-T3a.PNG)
+
+![M20-Ejer3-T3b](ZZ-lab/M20-Ejer3-T3b.PNG)
+
+![M20-Ejer3-T3c](ZZ-lab/M20-Ejer3-T3c.PNG)
+
+![M20-Ejer3-T3d](ZZ-lab/M20-Ejer3-T3d.PNG)
 
 #### Task 4: Validate pull request integration
 
@@ -395,7 +532,25 @@ In this task, you will validate pull request integration between Azure DevOps an
 
     > **Note**: The reported issues contain only changes in the code corresponding to the pull request. Pre-existing issues in **Program.cs** and other files are ignored.
 
-#### Task 4: Block pull requests in response to failing Code Quality checks
+## Evidencias:
+
+![M20-Ejer3-T4a](ZZ-lab/M20-Ejer3-T4a.PNG)
+
+![M20-Ejer3-T4b](ZZ-lab/M20-Ejer3-T4b.PNG)
+
+![M20-Ejer3-T4c](ZZ-lab/M20-Ejer3-T4c.PNG)
+
+![M20-Ejer3-T4d](ZZ-lab/M20-Ejer3-T4d.PNG)
+
+![M20-Ejer3-T4e](ZZ-lab/M20-Ejer3-T4e.PNG)
+
+![M20-Ejer3-T4f](ZZ-lab/M20-Ejer3-T4f.PNG)
+
+![M20-Ejer3-T4g](ZZ-lab/M20-Ejer3-T4g.PNG)
+
+![M20-Ejer3-T4h](ZZ-lab/M20-Ejer3-T4h.PNG)
+
+#### Task 5: Block pull requests in response to failing Code Quality checks
 
 In this task, you will configure blocking of pull requests in response to failing Code Quality checks. 
 
@@ -414,3 +569,20 @@ In this task, you will configure blocking of pull requests in response to failin
 ## Review
 
 In this lab, you learned how to integrate Azure DevOps Services with SonarCloud.
+
+## Evidencias:
+
+![M20-Ejer3-T5a](ZZ-lab/M20-Ejer3-T5a.PNG)
+
+![M20-Ejer3-T5b](ZZ-lab/M20-Ejer3-T5b.PNG)
+
+![M20-Ejer3-T5c](ZZ-lab/M20-Ejer3-T5c.PNG)
+
+![M20-Ejer3-T5d](ZZ-lab/M20-Ejer3-T5d.PNG)
+
+![M20-Ejer3-T5e](ZZ-lab/M20-Ejer3-T5e.PNG)
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTIC-AZ-400-Evidencias-DesigningandImplementingMicrosoftDevOpsSolutions/blob/master/ContenidoEvidenciasAZ-400.md)
+
